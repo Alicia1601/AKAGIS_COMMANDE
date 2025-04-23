@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #1A2A44 0%, #2C3E50 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.back-arrow {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ffffff;
+    color: #2C3E50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.catalog-section {
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    text-align: left;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.catalog-item {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.catalog-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.catalog-item button {
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

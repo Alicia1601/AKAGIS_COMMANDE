@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnalisation - Votre Espace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page d'accueil -->
+    <div class="container intro-section">
+       
+        <div class="intro-content">
+            <img src="style.jpg" alt="Icone Personnalisation" class="intro-icon">
+            <h1>Créez votre style unique !</h1>
+            <p>Personnalisez des tableaux, t-shirts et carnets selon vos envies. Exprimez-vous dès maintenant !</p>
+            <button onclick="showCatalog()">Voir le catalogue</button>
+        </div>
+    </div>
+
+    <!-- Page Catalogue -->
+    <div class="container catalog-section" style="display: none;">
+        <div class="header">
+            <a href="#" class="back-arrow" onclick="showIntro()">&#8592;</a>
+        </div>
+        <h1>Catalogue de Personnalisation</h1>
+
+        <!-- Catégorie Tableaux -->
+        <h2>Tableaux Personnalisés</h2>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <img src="Tabeau1 (2).jpg" alt="Tableau 1">
+                <button onclick="orderItem('Tableau Personnalisé 1')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="Tabeau2.jpg" alt="Tableau 2">
+                <button onclick="orderItem('Tableau Personnalisé 2')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="Tabeau3.jpg" alt="Tableau 3">
+                <button onclick="orderItem('Tableau Personnalisé 3')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="Tabeau4.jpg" alt="Tableau 4">
+                <button onclick="orderItem('Tableau Personnalisé 4')">Commander</button>
+            </div>
+        </div>
+
+        <!-- Catégorie T-shirts -->
+        <h2>T-shirts Personnalisés</h2>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <img src="T-shirt1.jpg" alt="T-shirt 1">
+                <button onclick="orderItem('T-shirt Personnalisé 1')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="T-shirt2.jpg" alt="T-shirt 2">
+                <button onclick="orderItem('T-shirt Personnalisé 2')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="T-shirt3.jpg" alt="T-shirt 3">
+                <button onclick="orderItem('T-shirt Personnalisé 3')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="T-shirt4.webp" alt="T-shirt 4">
+                <button onclick="orderItem('T-shirt Personnalisé 4')">Commander</button>
+            </div>
+        </div>
+
+        <!-- Catégorie Carnets -->
+        <h2>Carnets Personnalisés</h2>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <img src="carnet1.jpg" alt="Carnet 1">
+                <button onclick="orderItem('Carnet Personnalisé 1')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="carnet2.jpg" alt="Carnet 2">
+                <button onclick="orderItem('Carnet Personnalisé 2')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="carnet3.jpg" alt="Carnet 3">
+                <button onclick="orderItem('Carnet Personnalisé 3')">Commander</button>
+            </div>
+            <div class="catalog-item">
+                <img src="carnet4.jpg" alt="Carnet 4">
+                <button onclick="orderItem('Carnet Personnalisé 4')">Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
